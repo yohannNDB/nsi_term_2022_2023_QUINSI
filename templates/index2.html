@@ -5,5 +5,13 @@
 {% endblock %}
 
 {% block body %} 
-<h1>Template</h1>
+<h1>Who is it?</h1>
+<form>
+    <label for="question">Posez une question:</label>
+    <input type="text" id="question" name="question">
+    <input type="submit" value="Envoyer">
+  </form>
+  <div id="answer">
+    <!-- Affichage des réponses ici -->
+  </div>
 {% endblock %}
