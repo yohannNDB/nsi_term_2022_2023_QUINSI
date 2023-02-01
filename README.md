@@ -1,4 +1,3 @@
-# nsi_term_2022_2023_NommeSonIp
 page joueur 1  premier tour = choix du personnage
 page joueur 2 premier tour = choix du personnage
 
