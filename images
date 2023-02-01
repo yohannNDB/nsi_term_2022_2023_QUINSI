@@ -1,24 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="static/css/main.css">
 <title>Page Title</title>
 </head>
+
+<script>
+function hideImage() {
+  document.getElementById("merle").style.display = "none";
+}
+
+function showImage() {
+  document.getElementById("merle").style.display = "block";
+}  
+
+function hideImage1() {
+  document.getElementById("tristan").style.display = "none";
+}
+
+function showImage1() {
+  document.getElementById("tristan").style.display = "block";
+}  
+
+function hideImage2() {
+  document.getElementById("yohann").style.display = "none";
+}
+
+function showImage2() {
+  document.getElementById("yohann").style.display = "block";
+}  
+function hideImage3() {
+  document.getElementById("martin").style.display = "none";
+}
+
+function showImage3() {
+  document.getElementById("martin").style.display = "block";
+}  
+function hideImage4() {
+  document.getElementById("sonia").style.display = "none";
+}
+
+function showImage4() {
+  document.getElementById("sonia").style.display = "block";
+}  
+function hideImage5() {
+  document.getElementById("thiago").style.display = "none";
+}
+
+function showImage5() {
+  document.getElementById("thiago").style.display = "block";
+}  
+function hideImage6() {
+  document.getElementById("kyrian").style.display = "none";
+}
+
+function showImage6() {
+  document.getElementById("kyrian").style.display = "block";
+}  
+function hideImage7() {
+  document.getElementById("alessandro").style.display = "none";
+}
+
+function showImage7() {
+  document.getElementById("alessandro").style.display = "block";
+}  
+function hideImage8() {
+  document.getElementById("mathis").style.display = "none";
+}
+
+function showImage8() {
+  document.getElementById("mathis").style.display = "block";
+}  
+function hideImage9() {
+  document.getElementById("bastien").style.display = "none";
+}
+
+function showImage9() {
+  document.getElementById("bastien").style.display = "block";
+}  
+function hideImage10() {
+  document.getElementById("antoine").style.display = "none";
+}
+
+function showImage10() {
+  document.getElementById("antoine").style.display = "block";
+}  
+function hideImage11() {
+  document.getElementById("celestine").style.display = "none";
+}
+
+function showImage11() {
+  document.getElementById("celestine").style.display = "block";
+}  
+
+
+</script>
+
 <body>
 
 <h1>test</h1>
-<img src="merle.jpg" style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
-<img src="tristan.jpg" style="position: absolute; top: 50px; left: 220px;"  width="200" height="250">
-<img src="yohann.jpg" style="position: absolute; top: 50px; left: 420px;"  width="200" height="250">
-<img src="martin.jpg" style="position: absolute; top: 50px; left: 620px;"  width="200" height="250">
-<img src="sonia.jpg" style="position: absolute; top: 50px; left: 820px;"  width="200" height="250">
-<img src="thiago.jpg" style="position: absolute; top: 50px; left: 1020px;"  width="200" height="250">
-<img src="kyriann.jpg" style="position: absolute; top: 50px; left: 1220px;"  width="200" height="250">
-<img src="alessandro.jpg" style="position: absolute; top: 50px; left: 1420px;"  width="200" height="250">
-<img src="mathis.jpg" style="position: absolute; top: 50px; left: 1620px;"  width="200" height="250">
-<img src="bastien.jpg" style="position: absolute; top: 300px; left: 20px;"  width="200" height="250">
-<img src="antoine.jpg" style="position: absolute; top: 300px; left: 220px;"  width="200" height="250">
-<img src="celestine.jpg" style="position: absolute; top: 300px; left: 420px;"  width="200" height="250">
+<img src="merle.jpg" id="merle"  style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
+<button onclick="hideImage()" style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>
+<button onclick="showImage()"style="position: absolute; top: 320px; left: 64px;" >Afficher l'image</button>
+
+<img src="tristan.jpg" id="tristan" style="position: absolute; top: 50px; left: 220px;"  width="200" height="250">
+<button onclick="hideImage1()" style="position: absolute; top: 300px; left: 265px;" >Cacher l'image</button>
+<button onclick="showImage1()"style="position: absolute; top: 320px; left: 264px;" >Afficher l'image</button>
+
+<img src="yohann.jpg" id="yohann" style="position: absolute; top: 50px; left: 420px;"  width="200" height="250">
+<button onclick="hideImage2()" style="position: absolute; top: 300px; left: 465px;" >Cacher l'image</button>
+<button onclick="showImage2()"style="position: absolute; top: 320px; left: 464px;" >Afficher l'image</button>
+
+<img src="martin.jpg" id="martin" style="position: absolute; top: 50px; left: 620px;"  width="200" height="250">
+<button onclick="hideImage3()" style="position: absolute; top: 300px; left: 665px;" >Cacher l'image</button>
+<button onclick="showImage3()"style="position: absolute; top: 320px; left: 664px;" >Afficher l'image</button>
+
+<img src="sonia.jpg" id="sonia" style="position: absolute; top: 50px; left: 820px;"  width="200" height="250">
+<button onclick="hideImage4()" style="position: absolute; top: 300px; left: 865px;" >Cacher l'image</button>
+<button onclick="showImage4()"style="position: absolute; top: 320px; left: 864px;" >Afficher l'image</button>
+
+<img src="thiago.jpg" id="thiago" style="position: absolute; top: 50px; left: 1020px;"  width="200" height="250">
+<button onclick="hideImage5()" style="position: absolute; top: 300px; left: 1065px;" >Cacher l'image</button>
+<button onclick="showImage5()"style="position: absolute; top: 320px; left: 1064px;" >Afficher l'image</button>
+
+<img src="kyriann.jpg" id="kyrian" style="position: absolute; top: 50px; left: 1220px;"  width="200" height="250">
+<button onclick="hideImage6()" style="position: absolute; top: 300px; left: 1265px;" >Cacher l'image</button>
+<button onclick="showImage6()"style="position: absolute; top: 320px; left: 1264px;" >Afficher l'image</button>
+
+<img src="alessandro.jpg" id="alessandro" style="position: absolute; top: 50px; left: 1420px;"  width="200" height="250">
+<button onclick="hideImage7()" style="position: absolute; top: 300px; left: 1465px;" >Cacher l'image</button>
+<button onclick="showImage7()"style="position: absolute; top: 320px; left: 1464px;" >Afficher l'image</button>
+
+<img src="mathis.jpg" id="mathis" style="position: absolute; top: 50px; left: 1620px;"  width="200" height="250">
+<button onclick="hideImage8()" style="position: absolute; top: 300px; left: 1665px;" >Cacher l'image</button>
+<button onclick="showImage8()"style="position: absolute; top: 320px; left: 1664px;" >Afficher l'image</button>
+
+<img src="bastien.jpg" id="bastien" style="position: absolute; top: 340px; left: 20px;"  width="200" height="250">
+<button onclick="hideImage9()" style="position: absolute; top: 590px; left: 65px;" >Cacher l'image</button>
+<button onclick="showImage9()"style="position: absolute; top: 610px; left: 64px;" >Afficher l'image</button>
+
+<img src="antoine.jpg" id="antoine" style="position: absolute; top: 340px; left: 220px;"  width="200" height="250">
+<button onclick="hideImage10()" style="position: absolute; top: 590px; left: 265px;" >Cacher l'image</button>
+<button onclick="showImage10()"style="position: absolute; top: 610px; left: 264px;" >Afficher l'image</button>
+
+<img src="celestine.jpg" id="celestine" style="position: absolute; top: 340px; left: 420px;"  width="200" height="250">
+<button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
+<button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 <p></p>
 
+
 </body>
+
 </html>
