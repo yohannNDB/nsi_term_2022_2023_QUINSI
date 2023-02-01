@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>test</h1>
+<img src="merle.jpg" style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
+<img src="tristan.jpg" style="position: absolute; top: 50px; left: 220px;"  width="200" height="250">
+<img src="yohann.jpg" style="position: absolute; top: 50px; left: 420px;"  width="200" height="250">
+<img src="martin.jpg" style="position: absolute; top: 50px; left: 620px;"  width="200" height="250">
+<img src="sonia.jpg" style="position: absolute; top: 50px; left: 820px;"  width="200" height="250">
+<img src="thiago.jpg" style="position: absolute; top: 50px; left: 1020px;"  width="200" height="250">
+<img src="kyriann.jpg" style="position: absolute; top: 50px; left: 1220px;"  width="200" height="250">
+<img src="alessandro.jpg" style="position: absolute; top: 50px; left: 1420px;"  width="200" height="250">
+<img src="mathis.jpg" style="position: absolute; top: 50px; left: 1620px;"  width="200" height="250">
+<img src="bastien.jpg" style="position: absolute; top: 300px; left: 20px;"  width="200" height="250">
+<img src="antoine.jpg" style="position: absolute; top: 300px; left: 220px;"  width="200" height="250">
+<img src="celestine.jpg" style="position: absolute; top: 300px; left: 420px;"  width="200" height="250">
+<p></p>
+
+</body>
+</html>
