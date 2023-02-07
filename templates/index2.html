@@ -88,7 +88,13 @@
     function showImage11() {
       document.getElementById("celestine").style.display = "block";
     }  
-    
+    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
+    var count = 0;
+function showAlert() {
+  count++;
+  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
+  alert(message);
+}
     
     </script>
 {% endblock %}
@@ -144,6 +150,15 @@
   <img src="static/images/celestine.jpg" id="celestine" style="position: absolute; top: 340px; left: 420px;"  width="200" height="250">
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
+
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">Finir le tour</button>
+
+
+  <button onclick="location.reload();" style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
+
+  <button onclick="document.getElementById('hideImage').style.display = 'block';"style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>>
+
+<img id="hideImage" style="display: none;" src="carte.png" alt="hideImage" style="position: absolute; top: 500px; left: 20px;">
   <form>
     <label for="question">Posez une question:</label>
     <input type="text" id="question" name="question">
@@ -154,4 +169,5 @@
   </div>
 
   <p>{{answer}}</p>
+
 {% endblock %}
