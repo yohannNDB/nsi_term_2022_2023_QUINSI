@@ -3,90 +3,114 @@
 {% block head %} 
 <script>
     function hideImage() {
-      document.getElementById("merle").style.display = "none";
-    }
+      var image = document.getElementById("merle");
+      image.src = "static/images/carte.png";
+      }
     
     function showImage() {
-      document.getElementById("merle").style.display = "block";
+      var image = document.getElementById("merle");
+      image.src = "static/images/merle.jpg";
     }  
     
     function hideImage1() {
-      document.getElementById("tristan").style.display = "none";
+      var image = document.getElementById("tristan");
+      image.src = "static/images/carte.png";
     }
     
     function showImage1() {
-      document.getElementById("tristan").style.display = "block";
+      var image = document.getElementById("tristan");
+      image.src = "static/images/tristan.jpg";
     }  
     
     function hideImage2() {
-      document.getElementById("yohann").style.display = "none";
+      var image = document.getElementById("yohann");
+      image.src = "static/images/carte.png";
     }
     
     function showImage2() {
-      document.getElementById("yohann").style.display = "block";
+      var image = document.getElementById("yohann");
+      image.src = "static/images/yohann.jpg";
     }  
     function hideImage3() {
-      document.getElementById("martin").style.display = "none";
+      var image = document.getElementById("martin");
+      image.src = "static/images/carte.png";
     }
     
     function showImage3() {
-      document.getElementById("martin").style.display = "block";
+      var image = document.getElementById("martin");
+      image.src = "static/images/martin.jpg";
     }  
     function hideImage4() {
-      document.getElementById("sonia").style.display = "none";
+      var image = document.getElementById("sonia");
+      image.src = "static/images/carte.png";
     }
     
     function showImage4() {
-      document.getElementById("sonia").style.display = "block";
+      var image = document.getElementById("sonia");
+      image.src = "static/images/sonia.jpg";
     }  
     function hideImage5() {
-      document.getElementById("thiago").style.display = "none";
+      var image = document.getElementById("thiago");
+      image.src = "static/images/carte.png";
     }
     
     function showImage5() {
-      document.getElementById("thiago").style.display = "block";
+      var image = document.getElementById("thiago");
+      image.src = "static/images/thiago.jpg";
     }  
     function hideImage6() {
-      document.getElementById("kyrian").style.display = "none";
+      var image = document.getElementById("kyrian");
+      image.src = "static/images/carte.png";
     }
     
     function showImage6() {
-      document.getElementById("kyrian").style.display = "block";
+      var image = document.getElementById("kyrian");
+      image.src = "static/images/kyriann.jpg";
     }  
     function hideImage7() {
-      document.getElementById("alessandro").style.display = "none";
+      var image = document.getElementById("alessandro");
+      image.src = "static/images/carte.png";
     }
     
     function showImage7() {
-      document.getElementById("alessandro").style.display = "block";
+      var image = document.getElementById("alessandro");
+      image.src = "static/images/alessandro.jpg";
     }  
     function hideImage8() {
-      document.getElementById("mathis").style.display = "none";
+      var image = document.getElementById("mathis");
+      image.src = "static/images/carte.png";
     }
     
     function showImage8() {
-      document.getElementById("mathis").style.display = "block";
+      var image = document.getElementById("mathis");
+      image.src = "static/images/mathis.jpg";
     }  
     function hideImage9() {
-      document.getElementById("bastien").style.display = "none";
+      var image = document.getElementById("bastien");
+      image.src = "static/images/carte.png";
     }
     
     function showImage9() {
-      document.getElementById("bastien").style.display = "block";
+      var image = document.getElementById("bastien");
+      image.src = "static/images/bastien.jpg";
     }  
     function hideImage10() {
-      document.getElementById("antoine").style.display = "none";
+      var image = document.getElementById("antoine");
+      image.src = "static/images/carte.png";
     }
     
     function showImage10() {
-      document.getElementById("antoine").style.display = "block";
+      var image = document.getElementById("antoine");
+      image.src = "static/images/antoine.jpg";
     }  
     function hideImage11() {
-      document.getElementById("celestine").style.display = "none";
+      var image = document.getElementById("celestine");
+      image.src = "static/images/carte.png";
     }
     
     function showImage11() {
-      document.getElementById("celestine").style.display = "block";
+      var image = document.getElementById("celestine");
+      image.src = "static/images/celestine.jpg";
     }  
     var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
     var count = 0;
@@ -156,8 +180,6 @@ function showAlert() {
 
   <button onclick="location.reload();" style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
 
-  <button onclick="document.getElementById('hideImage').style.display = 'block';"style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>
 
-<img id="hideImage" style="display: none;" src="carte.png" alt="hideImage" style="position: absolute; top: 500px; left: 20px;">
 
 {% endblock %}
