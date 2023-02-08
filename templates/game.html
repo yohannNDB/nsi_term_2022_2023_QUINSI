@@ -156,18 +156,8 @@ function showAlert() {
 
   <button onclick="location.reload();" style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
 
-  <button onclick="document.getElementById('hideImage').style.display = 'block';"style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>>
+  <button onclick="document.getElementById('hideImage').style.display = 'block';"style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>
 
 <img id="hideImage" style="display: none;" src="carte.png" alt="hideImage" style="position: absolute; top: 500px; left: 20px;">
-  <form>
-    <label for="question">Posez une question:</label>
-    <input type="text" id="question" name="question">
-    <input type="submit" value="Envoyer">
-  </form>
-  <div id="answer">
-    <!-- Affichage des réponses ici -->
-  </div>
-
-  <p>{{answer}}</p>
 
 {% endblock %}
