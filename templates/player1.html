@@ -118,13 +118,17 @@ function showAlert() {
   count++;
   message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
   alert(message);
-  window.location.href='/QUINSI1';
+  window.location.href='/QUINSI2';
+
 }
     
     </script>
 {% endblock %}
 
 {% block body %} 
+<h1>Qui-est-ce</h1>
+
+
   <img src="static/images/merle.jpg" id="merle"  style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
   <button onclick="hideImage()" style="position: absolute; top: 300px; left: 65px;" >Cacher l'image</button>
   <button onclick="showImage()"style="position: absolute; top: 320px; left: 64px;" >Afficher l'image</button>
@@ -132,7 +136,6 @@ function showAlert() {
   <img src="static/images/tristan.jpg" id="tristan" style="position: absolute; top: 50px; left: 220px;"  width="200" height="250">
   <button onclick="hideImage1()" style="position: absolute; top: 300px; left: 265px;" >Cacher l'image</button>
   <button onclick="showImage1()"style="position: absolute; top: 320px; left: 264px;" >Afficher l'image</button>
-  
   <img src="static/images/yohann.jpg" id="yohann" style="position: absolute; top: 50px; left: 420px;"  width="200" height="250">
   <button onclick="hideImage2()" style="position: absolute; top: 300px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage2()"style="position: absolute; top: 320px; left: 464px;" >Afficher l'image</button>
