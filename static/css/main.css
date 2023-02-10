@@ -1,6 +1,9 @@
 body, html {
     margin: 5000;
     font-family: sans-serif;
+    background-image: url('/static/images/espace.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: lightblue;
 }
 

@@ -8,9 +8,12 @@ def index():
 
 
 @app.route('/QUINSI')
-def jeu():
+def player1():
     return render_template('game.html')
 
+@app.route('/QUINSI2')
+def player2():
+    return render_template('player2.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
