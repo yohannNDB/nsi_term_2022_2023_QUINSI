@@ -1,5 +1,13 @@
 body, html {
-    margin: 0;
+    margin: 5000;
     font-family: sans-serif;
     background-color: lightblue;
 }
+
+
+button:hover {
+    color: #ff00d4;
+    border: #0062FF solid 1px;
+    background: #FFFF99;
+    }
+
