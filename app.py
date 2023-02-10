@@ -7,7 +7,7 @@ def index():
     return render_template('home.html')
 
 
-@app.route('/QUINSI')
+@app.route('/QUINSI1')
 def player1():
     return render_template('game.html')
 
