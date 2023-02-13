@@ -6,7 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template('home.html')
 
-
 @app.route('/QUINSI1')
 def game1():
     return render_template('game.html')

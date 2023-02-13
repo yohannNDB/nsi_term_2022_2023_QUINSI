@@ -115,12 +115,19 @@
     var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
     var count = 0;
 function showAlert() {
-  count++;
-  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
-  alert(message);
+    
   window.location.href='/QUINSI2';
 
 }
+
+function saveIdToLocalStorage(id) {
+  localStorage.setItem("htmlId", id);
+}
+
+document.getElementById("submitBtn").addEventListener("click", function() {
+  var htmlId = document.getElementById("someId").value;
+  saveIdToLocalStorage(htmlId);
+});
     
     </script>
 {% endblock %}
@@ -162,10 +169,14 @@ function showAlert() {
   <img src="static/images/celestine.jpg" id="celestine" style="position: absolute; top: 340px; left: 420px;"  width="200" height="250">
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Choisir</button>
 
-  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">Valider le choix</button>
+  <button id="Nextpage" onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
+    <img src="/static/images/Button_OK-removebg-preview.png" alt="Valider">
+  </button>
 
 
-  <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
+  <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">
+    <img src="/static/images/flecheretour-removebg-preview.png" alt="Réinitialiser>
+  </button>
 
 
 
