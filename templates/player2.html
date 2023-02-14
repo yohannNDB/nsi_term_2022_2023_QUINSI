@@ -111,12 +111,21 @@
     function showImage11() {
       var image = document.getElementById("celestine");
       image.src = "static/images/celestine.jpg";
-    }  
-    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
-    var count = 0;
-function showAlert() {
-  count++;
-  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
+    }
+    function compteurLocalstorage() {
+  // Initialisation du compteur
+  let compteur = localStorage.getItem('compteur') || 0;
+
+  // Mise à jour de l'affichage
+  document.getElementById('valeur-du-compteur').textContent = compteur;
+
+  // Gestionnaire d'événements pour incrémenter le compteur
+  document.getElementById('bouton-incrementer').onclick = function() {
+    compteur++;
+    localStorage.setItem('compteur', compteur);
+    document.getElementById('valeur-du-compteur').textContent = compteur;
+  };
+  message = "Bonjour, vous avez cliqué sur le bouton " + compteur + " fois !";
   alert(message);
   window.location.href='/QUINSI3';
 }
@@ -173,7 +182,9 @@ function showAlert() {
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">Finir le tour</button>
+  <button onclick="compteurLocalstorage()" style="position: absolute; top: 810px; left: 864px;">
+    <img src="/static/images/button_Next_tour.png" alt="Finir le tour">
+  </button>
 
 
   <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>

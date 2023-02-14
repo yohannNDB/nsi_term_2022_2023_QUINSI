@@ -125,7 +125,6 @@ function showAlert() {
 {% endblock %}
 
 {% block body %} 
-<h1>Qui-est-ce</h1>
 
 
   <img src="static/images/merle.jpg" id="merle"  style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
@@ -175,7 +174,9 @@ function showAlert() {
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">Finir le tour</button>
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
+    <img src="/static/images/button_Next_tour.png" alt="Finir le tour">
+  </button>
 
 
   <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
