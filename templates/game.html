@@ -120,15 +120,6 @@ function showAlert() {
 
 }
 
-function saveIdToLocalStorage(id) {
-  localStorage.setItem("htmlId", id);
-}
-
-document.getElementById("submitBtn").addEventListener("click", function() {
-  var htmlId = document.getElementById("someId").value;
-  saveIdToLocalStorage(htmlId);
-});
-    
     </script>
 {% endblock %}
 
