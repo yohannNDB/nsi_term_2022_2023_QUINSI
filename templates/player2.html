@@ -111,12 +111,16 @@
     function showImage11() {
       var image = document.getElementById("celestine");
       image.src = "static/images/celestine.jpg";
-    }
-    function showAlert(){
-  message = "Bonjour, vous avez cliqué sur le bouton " + compteur + " fois !";
+    }  
+    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
+    var count = 0;
+    function showAlert() {
+  count++;
+  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
   alert(message);
   window.location.href='/QUINSI3';
 }
+
     
     </script>
 {% endblock %}
@@ -170,8 +174,8 @@
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="compteurLocalstorage()" style="position: absolute; top: 810px; left: 864px;">
-    <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;" >
+    <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125" >
   </button>
 
 
