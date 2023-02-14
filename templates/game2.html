@@ -121,7 +121,46 @@ function showAlert() {
   window.location.href='/QUINSI3';
 
 }
-    
+
+const premierBouton = document.getElementById('merle');
+const premierBouton1 = document.getElementById('tristan');
+const premierBouton2 = document.getElementById('yohann');
+const premierBouton3 = document.getElementById('martin');
+const premierBouton4 = document.getElementById('sonia');
+const premierBouton5 = document.getElementById('thiago');
+const premierBouton6 = document.getElementById('kyrian');
+const premierBouton7 = document.getElementById('alessandro');
+const premierBouton8 = document.getElementById('mathis');
+const premierBouton9 = document.getElementById('bastien');
+const premierBouton10 = document.getElementById('antoine');
+const premierBouton11 = document.getElementById('celestine');
+const secondBouton = document.getElementById('Nextpage');
+
+const activerSecondBouton = function() {
+  // Activer le second bouton
+  secondBouton.disabled = false;
+};
+
+
+premierBouton0.onclick = activerSecondBouton;
+premierBouton1.onclick = activerSecondBouton;
+
+premierBouton2.onclick = activerSecondBouton;
+premierBouton3.onclick = activerSecondBouton;
+
+premierBouton4.onclick = activerSecondBouton;
+premierBouton5.onclick = activerSecondBouton;
+
+premierBouton6.onclick = activerSecondBouton;
+premierBouton7.onclick = activerSecondBouton;
+
+premierBouton8.onclick = activerSecondBouton;
+premierBouton9.onclick = activerSecondBouton;
+
+premierBouton10.onclick = activerSecondBouton;
+premierBouton11.onclick = activerSecondBouton;
+
+
     </script>
 {% endblock %}
 
@@ -162,7 +201,7 @@ function showAlert() {
   <img src="static/images/celestine.jpg" id="celestine" style="position: absolute; top: 340px; left: 420px;"  width="200" height="250">
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Choisir</button>
 
-  <button id="Nextpage" onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
+  <button id="Nextpage" onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;" disabled>
     <img src="/static/images/Button_OK-removebg-preview.png" alt="Valider">
   </button>
 
