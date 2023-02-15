@@ -181,6 +181,23 @@ function showAlert() {
 
   <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
 
-
+  
+  
+  <form style="position: absolute; top: 810px; left: 864px;">
+    <p>Vous pouvez poser une question ci-dessous :</p>
+    <label for="question">Sélectionnez une question :</label>
+    <select name="question" id="question">
+      <option value="question1">Quelle est la signification de la vie ?</option>
+      <option value="question2">Comment fonctionne la cryptomonnaie ?</option>
+      <option value="question3">Qu'est-ce que l'intelligence artificielle ?</option>
+      <option value="question4">Comment apprendre une nouvelle langue ?</option>
+      <option value="question5">Qu'est-ce que le changement climatique ?</option>
+    </select>
+    <br><br>
+    <label for="message">Votre message :</label>
+    <br>
+    <textarea name="message" id="message" rows="5" cols="50"></textarea>
+    <br><br>
+    <input type="submit" value="Envoyer">
 
 {% endblock %}
