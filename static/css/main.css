@@ -4,17 +4,11 @@ body, html {
     animation: color-change 5s infinite; /* l'animation durera 5 secondes et se répétera indéfiniment */
   }
   
-  @keyframes color-change {
-    0% { background-color: #ffffff; } /* couleur initiale */
-    50% { background-color: #000000; } /* couleur intermédiaire */
-    100% { background-color: #ffffff; } /* couleur finale */
-  } 
-
 
 button:hover {
     color: #ff00d4;
     border: #0062FF solid 1px;
-    background: #b8ee09;
+    background: #ff0c58;
     }
 
 
