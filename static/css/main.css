@@ -3,12 +3,12 @@ body, html {
     font-family: sans-serif;
     animation: color-change 5s infinite; /* l'animation durera 5 secondes et se répétera indéfiniment */
   }
-  
+
 
 button:hover {
-    color: #ff00d4;
+    color: #BEB9B7;
     border: #0062FF solid 1px;
-    background: #ff0c58;
+    background: #8E8B89;
     }
 
 
