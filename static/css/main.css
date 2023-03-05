@@ -1,7 +1,7 @@
 body, html {
     margin: 5000;
     font-family: sans-serif;
-    animation: color-change 5s infinite; /* l'animation durera 5 secondes et se répétera indéfiniment */
+    background-color: red;
   }
 
 
