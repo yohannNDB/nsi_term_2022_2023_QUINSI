@@ -18,21 +18,21 @@ Nous nous sommes concerté sur les différentes tâches à accomplir lors de cet
 
 Les technologies utilisées pour développer l'application sont les suivantes :
 
-  *Python 
-  *Flask : framework Web pour Python
-  *HTML, CSS et JavaScript 
-  *SQLite : pour la base de données
+  * Python 
+  * Flask : framework Web pour Python
+  * HTML, CSS et JavaScript 
+  * SQLite : pour la base de données
 
 ### __*<font color="299CC1"> Installation et utilisation </font>*__
 
-  *Cloner le repository sur votre ordinateur
-  *Lancer l'application en exécutant la commande suivante : python app.py
-  *Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
+  * Cloner le repository sur votre ordinateur
+  * Lancer l'application en exécutant la commande suivante : python app.py
+  * Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
 
 ### __*<font color="299CC1"> Difficultés rencontrées </font>*__
 
-  *Pouvoir jouer sur 2 ordinateurs différents
-  *CSS
+  * Pouvoir jouer sur 2 ordinateurs différents
+  * CSS
 
 
 ### __*<font color="299CC1"> Auteurs </font>*__
