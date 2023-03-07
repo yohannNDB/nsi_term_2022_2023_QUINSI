@@ -22,7 +22,9 @@ def player1():
 def player2():
     return render_template('player2.html')
 
-
+@app.route('/contributeurs')
+def contributeurs():
+    return render_template('contributeurs.html')
 if __name__ == "__main__":
     app.run(debug=True)
 

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contributeurs</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		main {
+			padding: 20px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+		}
+		img {
+			margin-right: 10px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+		h2 {
+			margin: 0;
+			font-size: 1.2rem;
+			font-weight: normal;
+		}
+		p {
+			margin: 0;
+			font-size: 1rem;
+			color: #888;
+		}
+	</style>
+</head>
+{% endblock %}
+
+{% block body %} 
+<body>
+	<header>
+		<h1>Contributeurs</h1>
+	</header>
+	<main>
+		<h2>Liste des contributeurs :</h2>
+		<ul>
+			<li>
+				<img src="static/images/merle.jpg" alt="Photo de profil">
+				<div>
+					<h2>Alexandre Merle</h2>
+					<p>alexandremerle@gmail.com</p>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/yohann.jpg" alt="Photo de profil">
+				<div>
+					<h2>Yohann Pouillieute</h2>
+					<p>yohannpouillieute@gmail.com</p>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/martin.jpg" alt="Photo de profil">
+				<div>
+					<h2>Martin Bravais</h2>
+					<p>martinbravais@gmail.com</p>
+				</div>
+			</li>
+		</ul>
+	</main>
+</body>
+</html>
+<nav>
+    <ul>
+        <li><a href="http://localhost:5000">retourner au menu</a></li>
+    </ul>
+</nav>
+{% endblock %}
