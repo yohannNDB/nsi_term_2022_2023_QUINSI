@@ -112,19 +112,7 @@
       var image = document.getElementById("celestine");
       image.src = "static/images/celestine.jpg";
     }  
-    function showPopupAndRedirect() {
-        var question = prompt("Quelle est la question que vous posez à l'autre joueur ?");
-        if (question !== null && question !== '') {
-            // Si l'utilisateur a saisi une question, afficher un message avec le nombre de clics
-            count++;
-            message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
-            alert(message);
-            window.location.href='/QUINSI3';
-        } else {
-            // Si l'utilisateur n'a pas saisi de question, ne rien faire
-            console.log("Aucune question saisie");
-        }
-    }
+
 
     
     </script>
@@ -179,13 +167,36 @@
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="showPopupAndRedirect()" style="position: absolute; top: 810px; left: 864px;" >
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;" >
     <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125" >
   </button>
 
 
   <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
 
-
+  <script> 
+    var count = 0;
+    function showPopupAndRedirect() {
+      // le code de la fonction showPopupAndRedirect
+    }
+    function showPopupAndRedirect() {
+      var questionposee = localStorage.getItem("question")
+        var question = prompt("Veuillez répondre à la question : \n" + questionposee);
+        if (question !== null && question !== '') {
+            // Si l'utilisateur a saisi une question, afficher un message avec le nombre de clics
+            count++;
+            message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
+            alert(message);
+            window.location.href='/QUINSI3';
+        } else {
+            // Si l'utilisateur n'a pas saisi de question, ne rien faire
+            console.log("Aucune question saisie");
+        }
+    }
+  </script>
+  
+  <button onclick="showPopupAndRedirect()" style="position: absolute; top: 810px; left: 864px;">
+    <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+  </button>
 
 {% endblock %}
