@@ -19,7 +19,7 @@ Testez votre jeu en ouvrant le fichier HTML dans plusieurs navigateurs pour joue
 
 https://www.youtube.com/watch?v=Z1RJmh_OqeA
 
-Projet NSI Terminale 2022-2023 : QUINSI
+### __*<font color="299CC1"> Projet NSI Terminale 2022-2023 : QUINSI </font>*__
 
 Description
 
