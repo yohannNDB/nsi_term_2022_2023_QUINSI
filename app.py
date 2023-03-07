@@ -1,4 +1,6 @@
-from flask import Flask, render_template, url_for
+"""Ce code crée une application web Flask qui comprend plusieurs routes pour différentes pages."""
+
+from flask import Flask, render_template, url_for """ cette ligne importe les modules Flask, render_template (pour renvoyer le contenu HTML des pages) et url_for (pour générer des URL pour les routes de l'application)."""
 
 app = Flask(__name__)
 
