@@ -5,6 +5,9 @@
 
 Le projet "QUINSI" est un site Web qui permet de jouer au populaire jeu "Qui est-ce". Cependant, l'originalité de ce jeu est que les personnes présentes sur ce jeu sont les personnes faisant la spécialité NSI.
 
+### __*<font color="299CC1"> Réflexion sur la manière d'aborder le projet </font>*__
+Nous nous sommes concerté sur les différentes tâches à accomplir lors de cette mise en place de ce projet de Qui est-ce. Nous avons commencé par créer un jeu accessible sur un ordinateur puis nous avons décidé de penser plus haut et de rendre ce jeu jouable sur plusieurs ordinateurs.
+
 ### __*<font color="299CC1"> Fonctionnalités </font>*__
 
 *Pouvoir jouer sur le même ordinateur
