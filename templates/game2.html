@@ -11,51 +11,12 @@
   localStorage.setItem('idBouton', idBouton1);
   console.log('ID enregistré player2 :', idBouton1);
 }
-
-    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
-    var count = 0;
 function Valider_le_choix() {
+  localStorage.setItem("count",0)
   window.location.href='/QUINSI3';
 
 }
 
-const premierBouton = document.getElementById('merle');
-const premierBouton1 = document.getElementById('tristan');
-const premierBouton2 = document.getElementById('yohann');
-const premierBouton3 = document.getElementById('martin');
-const premierBouton4 = document.getElementById('sonia');
-const premierBouton5 = document.getElementById('thiago');
-const premierBouton6 = document.getElementById('kyrian');
-const premierBouton7 = document.getElementById('alessandro');
-const premierBouton8 = document.getElementById('mathis');
-const premierBouton9 = document.getElementById('bastien');
-const premierBouton10 = document.getElementById('antoine');
-const premierBouton11 = document.getElementById('celestine');
-const secondBouton = document.getElementById('Nextpage');
-
-const activerSecondBouton = function() {
-  // Activer le second bouton
-  secondBouton.disabled = false;
-};
-
-
-premierBouton.onclick = activerSecondBouton;
-premierBouton1.onclick = activerSecondBouton;
-
-premierBouton2.onclick = activerSecondBouton;
-premierBouton3.onclick = activerSecondBouton;
-
-premierBouton4.onclick = activerSecondBouton;
-premierBouton5.onclick = activerSecondBouton;
-
-premierBouton6.onclick = activerSecondBouton;
-premierBouton7.onclick = activerSecondBouton;
-
-premierBouton8.onclick = activerSecondBouton;
-premierBouton9.onclick = activerSecondBouton;
-
-premierBouton10.onclick = activerSecondBouton;
-premierBouton11.onclick = activerSecondBouton;
 
 
     </script>

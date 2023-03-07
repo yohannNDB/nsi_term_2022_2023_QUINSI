@@ -1,8 +1,8 @@
-body, html {
+body, html{
     margin: 5000;
     font-family: sans-serif;
     background-image : url(https://upload.wikimedia.org/wikipedia/commons/4/4f/Boulogne-Billancourt_-_Lyc%C3%A9e_Notre-Dame.JPG) ;
-    background-size: cover;
+    background-size : cover;
   }
  
     
@@ -11,7 +11,14 @@ body, html {
 button:hover {
     color: #BEB9B7;
     border: #0062FF solid 1px;
-    background: #8E8B89;
+    background: #dad4d1;
     }
 
 
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  
+}
