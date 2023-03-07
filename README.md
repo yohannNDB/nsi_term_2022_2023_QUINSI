@@ -18,3 +18,32 @@ Testez votre jeu en ouvrant le fichier HTML dans plusieurs navigateurs pour joue
 
 
 https://www.youtube.com/watch?v=Z1RJmh_OqeA
+
+Projet NSI Terminale 2022-2023 : QUINSI
+
+Description
+
+Le projet "QUINSI" est un site Web qui permet de jouer au populaire jeu "Qui est-ce". Cependant, l'originalité de ce jeu est que les personnes présentes sur ce jeu sont les personnes faisant la spécialité NSI.
+
+Fonctionnalités
+
+.
+.
+.
+.
+
+Technologies utilisées
+Les technologies utilisées pour développer l'application sont les suivantes :
+
+Python 
+Flask : framework Web pour Python
+HTML, CSS et JavaScript 
+SQLite : pour la base de données
+
+Installation et utilisation
+Cloner le repository sur votre ordinateur
+Lancer l'application en exécutant la commande suivante : python app.py
+Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
+
+Auteurs
+Ce projet a été réalisé par Yohann, Martin et Alexandre
