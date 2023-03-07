@@ -19,20 +19,20 @@ Testez votre jeu en ouvrant le fichier HTML dans plusieurs navigateurs pour joue
 
 https://www.youtube.com/watch?v=Z1RJmh_OqeA
 
-# <font color="EA6555"> Projet NSI Terminale 2022-2023 : QUINSI </font>*__
+# <font color="EA6555"> Projet NSI Terminale 2022-2023 : QUINSI </font>*
 
-Description
+### __*<font color="299CC1"> Description </font>*__
 
 Le projet "QUINSI" est un site Web qui permet de jouer au populaire jeu "Qui est-ce". Cependant, l'originalité de ce jeu est que les personnes présentes sur ce jeu sont les personnes faisant la spécialité NSI.
 
-Fonctionnalités
+### __*<font color="299CC1"> Fonctionnalités </font>*__
 
 .
 .
 .
 .
 
-Technologies utilisées
+### __*<font color="299CC1"> Technologies utilisées </font>*__
 Les technologies utilisées pour développer l'application sont les suivantes :
 
 Python 
@@ -40,10 +40,10 @@ Flask : framework Web pour Python
 HTML, CSS et JavaScript 
 SQLite : pour la base de données
 
-Installation et utilisation
+### __*<font color="299CC1"> Installation et utilisation </font>*__
 Cloner le repository sur votre ordinateur
 Lancer l'application en exécutant la commande suivante : python app.py
 Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
 
-Auteurs
+### __*<font color="299CC1"> Auteurs </font>*__
 Ce projet a été réalisé par Yohann, Martin et Alexandre
