@@ -181,10 +181,10 @@ verification()
   function verification(){
     count = localStorage.getItem("count")
     if(count >= 1 ){
-    showPopupAndRedirect()
+    showQuestion()
     }
   }
-  function showPopupAndRedirect() {
+  function showQuestion() {
     var reponse = localStorage.getItem("reponse")
     alert("La réponse a votre question est : \n " + reponse)
     localStorage.setItem("reponse", 0)

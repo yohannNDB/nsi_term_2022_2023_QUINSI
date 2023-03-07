@@ -177,16 +177,16 @@
   <script> 
     var count = 0;
     function showPopupAndRedirect() {
-      // le code de la fonction showPopupAndRedirect
-    }
-    function showPopupAndRedirect() {
       var questionposee = localStorage.getItem("question")
         var question = prompt("Veuillez répondre à la question : \n" + questionposee);
+        localStorage.setItem("reponse",question)
         if (question !== null && question !== '') {
             // Si l'utilisateur a saisi une question, afficher un message avec le nombre de clics
             count++;
             message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
             alert(message);
+
+            
             window.location.href='/QUINSI3';
         } else {
             // Si l'utilisateur n'a pas saisi de question, ne rien faire
