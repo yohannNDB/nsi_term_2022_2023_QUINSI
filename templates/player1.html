@@ -112,14 +112,7 @@
       var image = document.getElementById("celestine");
       image.src = "static/images/celestine.jpg";
     }  
-    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
-    var count = 0;
-function ChangePlayer() {
-  count++;
-  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
-  alert(message);
-  window.location.href='/QUINSI4';
-}
+
     
     </script>
 {% endblock %}
@@ -174,30 +167,55 @@ function ChangePlayer() {
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="ChangePlayer()" style="position: absolute; top: 810px; left: 864px;">
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
     <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
   </button>
 
+  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
+    <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+</button>
 
-  <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
 
+<script> 
+verification()
+  function verification(){
+    count = localStorage.getItem("count")
+    if(count >= 1 ){
+    showPopupAndRedirect()
+    }
+  }
+  function showPopupAndRedirect() {
+    var reponse = localStorage.getItem("reponse")
+    alert("La réponse a votre question est : \n " + reponse)
+    localStorage.setItem("reponse", 0)
+  }
+  async function showPopupAndRedirect() {
+      var question = prompt("Quelle est la question que vous posez à l'autre joueur ?");
+      if (question !== null && question !== '') {
+          count = localStorage.getItem("count")
+          if(count == null){
+            console.log("test")
+            localStorage.setItem("count", 1)
+            count = 1
+          }
+          else{
+            localStorage.setItem("count", parseFloat(count) + 1)
+            count = parseFloat(count) + 1
+          }
+          message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
+          alert(message);
+          console.log(question)
+          localStorage.setItem("question",question)
+          window.location.href='/QUINSI4';
+      } else {
+          // Si l'utilisateur n'a pas saisi de question, ne rien faire
+          console.log("Aucune question saisie");
+      }
+  }
+</script>
+
+<button onclick="showPopupAndRedirect()" style="position: absolute; top: 810px; left: 864px;">
+  <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+</button>
   
-  
-  <form style="position: absolute; top: 810px; left: 864px;">
-    <p>Vous pouvez poser une question ci-dessous :</p>
-    <label for="question">Sélectionnez une question :</label>
-    <select name="question" id="question">
-      <option value="question1">Est-il blond ?</option>
-      <option value="question2">Est-il brun ?</option>
-      <option value="question3">A-t-il un sweat?</option>
-      <option value="question4">Est-ce un garçon ?</option>
-      <option value="question5">Est-il noir ?</option>
-    </select>
-    <br><br>
-    <label for="message">Votre message :</label>
-    <br>
-    <textarea name="message" id="message" rows="5" cols="50"></textarea>
-    <br><br>
-    <input type="submit" value="Envoyer">
-
 {% endblock %}
