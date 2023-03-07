@@ -47,3 +47,5 @@ Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
 
 ### __*<font color="299CC1"> Auteurs </font>*__
 Ce projet a été réalisé par Yohann, Martin et Alexandre
+
+### __*<font color="299CC1"> le code </font>*__
