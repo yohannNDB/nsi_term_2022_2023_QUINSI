@@ -29,6 +29,10 @@ Les technologies utilisées pour développer l'application sont les suivantes :
   * Lancer l'application en exécutant la commande suivante : python app.py
   * Ouvrir votre navigateur Web et accéder à l'adresse http://localhost:5000
 
+### __*<font color="299CC1"> le code </font>*__
+
+Afin d'une meilleure compréhension du code, nous avons décidé de le commenter sur le programme directement. 
+
 ### __*<font color="299CC1"> Difficultés rencontrées </font>*__
 
   * Pouvoir jouer sur 2 ordinateurs différents
