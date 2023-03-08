@@ -6,3 +6,9 @@ body{
     text-align: center;
     align-items: center;
 }
+
+button:hover {
+    color: #BEB9B7;
+    border: #0062FF solid 1px;
+    background: #d1d1d1;
+    }
