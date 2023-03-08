@@ -11,94 +11,67 @@
   localStorage.setItem('idBouton', idBouton1);
   console.log('ID enregistré player2 :', idBouton1);
 }
-
-    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
-    var count = 0;
-function showAlert() {
+function Valider_le_choix() {
+  localStorage.setItem("count",0)
   window.location.href='/QUINSI3';
 
 }
 
-const premierBouton = document.getElementById('merle');
-const premierBouton1 = document.getElementById('tristan');
-const premierBouton2 = document.getElementById('yohann');
-const premierBouton3 = document.getElementById('martin');
-const premierBouton4 = document.getElementById('sonia');
-const premierBouton5 = document.getElementById('thiago');
-const premierBouton6 = document.getElementById('kyrian');
-const premierBouton7 = document.getElementById('alessandro');
-const premierBouton8 = document.getElementById('mathis');
-const premierBouton9 = document.getElementById('bastien');
-const premierBouton10 = document.getElementById('antoine');
-const premierBouton11 = document.getElementById('celestine');
-const secondBouton = document.getElementById('Nextpage');
-
-const activerSecondBouton = function() {
-  // Activer le second bouton
-  secondBouton.disabled = false;
-};
-
-
-premierBouton.onclick = activerSecondBouton;
-premierBouton1.onclick = activerSecondBouton;
-
-premierBouton2.onclick = activerSecondBouton;
-premierBouton3.onclick = activerSecondBouton;
-
-premierBouton4.onclick = activerSecondBouton;
-premierBouton5.onclick = activerSecondBouton;
-
-premierBouton6.onclick = activerSecondBouton;
-premierBouton7.onclick = activerSecondBouton;
-
-premierBouton8.onclick = activerSecondBouton;
-premierBouton9.onclick = activerSecondBouton;
-
-premierBouton10.onclick = activerSecondBouton;
-premierBouton11.onclick = activerSecondBouton;
 
 
     </script>
 {% endblock %}
 
 {% block body %} 
-  <img src="static/images/merle.jpg" id="merle"  style="position: absolute; top: 50px; left: 20px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('merle')" style="position: absolute; top: 300px; left: 65px;" >Choisir</button>
-  
-  <img src="static/images/tristan.jpg" id="tristan" style="position: absolute; top: 50px; left: 220px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('tristan')" style="position: absolute; top: 300px; left: 265px;" >Choisir</button>
+<img src="static/images/merle.jpg" id="merle" style="position: absolute; top: 50px; left: 20px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 65px;">Choisir</button>
 
-  <img src="static/images/yohann.jpg" id="yohann" style="position: absolute; top: 50px; left: 420px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('yohann')" style="position: absolute; top: 300px; left: 465px;" >Choisir</button>
+<style>
+  .selected {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+  }
+</style>
+<img src="static/images/tristan.jpg" id="tristan" style="position: absolute; top: 50px; left: 220px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 265px;">Choisir</button>
   
-  <img src="static/images/martin.jpg" id="martin" style="position: absolute; top: 50px; left: 620px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('martin')" style="position: absolute; top: 300px; left: 665px;" >Choisir</button>
+<img src="static/images/yohann.jpg" id="yohann" style="position: absolute; top: 50px; left: 420px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 465px;">Choisir</button>
   
-  <img src="static/images/sonia.jpg" id="sonia" style="position: absolute; top: 50px; left: 820px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('sonia')" style="position: absolute; top: 300px; left: 865px;" >Choisir</button>
+<img src="static/images/martin.jpg" id="martin" style="position: absolute; top: 50px; left: 620px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 665px;">Choisir</button>
   
-  <img src="static/images/thiago.jpg" id="thiago" style="position: absolute; top: 50px; left: 1020px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('thiago')" style="position: absolute; top: 300px; left: 1065px;" >Choisir</button>
   
-  <img src="static/images/kyriann.jpg" id="kyrian" style="position: absolute; top: 50px; left: 1220px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('kyrian')" style="position: absolute; top: 300px; left: 1265px;" >Choisir</button>
+<img src="static/images/sonia.jpg" id="sonia" style="position: absolute; top: 50px; left: 820px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 865px;">Choisir</button>
   
-  <img src="static/images/alessandro.jpg" id="alessandro" style="position: absolute; top: 50px; left: 1420px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('alessandro')" style="position: absolute; top: 300px; left: 1465px;" >Choisir</button>
   
-  <img src="static/images/mathis.jpg" id="mathis" style="position: absolute; top: 50px; left: 1620px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('mathis')" style="position: absolute; top: 300px; left: 1665px;" >Choisir</button>
+<img src="static/images/thiago.jpg" id="thiago" style="position: absolute; top: 50px; left: 1020px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 1065px;">Choisir</button>
   
-  <img src="static/images/bastien.jpg" id="bastien" style="position: absolute; top: 340px; left: 20px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('bastien')" style="position: absolute; top: 590px; left: 65px;" >Choisir</button>
-  
-  <img src="static/images/antoine.jpg" id="antoine" style="position: absolute; top: 340px; left: 220px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('antoine')" style="position: absolute; top: 590px; left: 265px;" >Choisir</button>
-  
-  <img src="static/images/celestine.jpg" id="celestine" style="position: absolute; top: 340px; left: 420px;"  width="200" height="250">
-  <button onclick="enregistrerChoixJ2('celestine')" style="position: absolute; top: 590px; left: 465px;" >Choisir</button>
+<img src="static/images/kyriann.jpg" id="kyriann" style="position: absolute; top: 50px; left: 1220px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 1265px;">Choisir</button>
+ 
+<img src="static/images/alessandro.jpg" id="alessandro" style="position: absolute; top: 50px; left: 1420px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 1465px;">Choisir</button>
 
-  <button id="Nextpage" onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
+<img src="static/images/mathis.jpg" id="mathis" style="position: absolute; top: 50px; left: 1620px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 300px; left: 1665px;">Choisir</button>
+
+<img src="static/images/bastien.jpg" id="bastien" style="position: absolute; top: 340px; left: 20px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 590px; left: 65px;">Choisir</button>
+
+<img src="static/images/tristan.jpg" id="tristan" style="position: absolute; top: 340px; left: 220px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 590px; left: 265px;">Choisir</button>
+
+<img src="static/images/bastien.jpg" id="bastien" style="position: absolute; top: 340px; left: 420px;" width="200" height="250">
+<button onclick="this.classList.add('selected'); this.disabled = true;" style="position: absolute; top: 590px; left: 465px;">Choisir</button>
+
+
+  
+
+  <button id="Nextpage" onclick="Valider_le_choix()" style="position: absolute; top: 810px; left: 864px;">
     <img src="/static/images/Button_OK-removebg-preview.png" alt="Valider" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125" >
   </button>
 

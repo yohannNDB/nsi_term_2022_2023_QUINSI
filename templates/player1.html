@@ -2,124 +2,191 @@
 
 {% block head %} 
 <script>
+  const images = [
+  'static/images/carte.png',
+  'static/images/merle.jpg',
+  'static/images/tristan.jpg',
+  'static/images/yohann.jpg',
+  'static/images/martin.jpg',
+  'static/images/sonia.jpg',
+  'static/images/thiago.jpg',
+  'static/images/kyriann.jpg',
+  'static/images/alessandro.jpg',
+  'static/images/mathis.jpg',
+  'static/images/bastien.jpg',
+  'static/images/antoine.jpg',
+  'static/images/celestine.jpg'
+  ] 
+
+  localStorage.setItem("images",images)
+  test = localStorage.getItem("images")
+
+
     function hideImage() {
       var image = document.getElementById("merle");
       image.src = "static/images/carte.png";
+      images.splice(1, 1, "static/images/carte.png");
+      localStorage.setItem('images', images);
       }
     
     function showImage() {
       var image = document.getElementById("merle");
       image.src = "static/images/merle.jpg";
+      images.splice(1, 1, "static/images/merle.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     
     function hideImage1() {
       var image = document.getElementById("tristan");
       image.src = "static/images/carte.png";
+      images.splice(2, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage1() {
       var image = document.getElementById("tristan");
       image.src = "static/images/tristan.jpg";
+      images.splice(2, 1, "static/images/tristan.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     
     function hideImage2() {
       var image = document.getElementById("yohann");
       image.src = "static/images/carte.png";
+      images.splice(3, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage2() {
       var image = document.getElementById("yohann");
       image.src = "static/images/yohann.jpg";
+      images.splice(3, 1, "static/images/yohann.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage3() {
       var image = document.getElementById("martin");
       image.src = "static/images/carte.png";
+      images.splice(4, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage3() {
       var image = document.getElementById("martin");
       image.src = "static/images/martin.jpg";
+      images.splice(4, 1, "static/images/martin.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage4() {
       var image = document.getElementById("sonia");
       image.src = "static/images/carte.png";
+      images.splice(5, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage4() {
       var image = document.getElementById("sonia");
       image.src = "static/images/sonia.jpg";
+      images.splice(5, 1, "static/images/sonia.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage5() {
       var image = document.getElementById("thiago");
       image.src = "static/images/carte.png";
+      images.splice(6, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage5() {
       var image = document.getElementById("thiago");
       image.src = "static/images/thiago.jpg";
+      images.splice(6, 1, "static/images/thiago.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage6() {
       var image = document.getElementById("kyrian");
       image.src = "static/images/carte.png";
+      images.splice(7, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage6() {
       var image = document.getElementById("kyrian");
       image.src = "static/images/kyriann.jpg";
+      images.splice(7, 1, "static/images/kyrian.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage7() {
       var image = document.getElementById("alessandro");
       image.src = "static/images/carte.png";
+      images.splice(8, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage7() {
       var image = document.getElementById("alessandro");
       image.src = "static/images/alessandro.jpg";
+      images.splice(8, 1, "static/images/alessandro.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage8() {
       var image = document.getElementById("mathis");
       image.src = "static/images/carte.png";
+      images.splice(9, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage8() {
       var image = document.getElementById("mathis");
       image.src = "static/images/mathis.jpg";
+      images.splice(9, 1, "static/images/mathis.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage9() {
       var image = document.getElementById("bastien");
       image.src = "static/images/carte.png";
+      images.splice(10, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage9() {
       var image = document.getElementById("bastien");
       image.src = "static/images/bastien.jpg";
+      images.splice(10, 1, "static/images/bastien.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage10() {
       var image = document.getElementById("antoine");
       image.src = "static/images/carte.png";
+      images.splice(11, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage10() {
       var image = document.getElementById("antoine");
       image.src = "static/images/antoine.jpg";
+      images.splice(11, 1, "static/images/antoine.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
     function hideImage11() {
       var image = document.getElementById("celestine");
       image.src = "static/images/carte.png";
+      images.splice(12, 1, "static/images/carte.png");
+      localStorage.setItem('images', JSON.stringify(images));
     }
     
     function showImage11() {
       var image = document.getElementById("celestine");
       image.src = "static/images/celestine.jpg";
+      images.splice(12, 1, "static/images/celestine.jpg");
+      localStorage.setItem('images', JSON.stringify(images));
     }  
-    var message = "Bonjour, vous avez cliqué sur le bouton pour la première fois !";
-    var count = 0;
-function showAlert() {
-  count++;
-  message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
-  alert(message);
-  window.location.href='/QUINSI4';
-}
+
+</script>
+
+<button onclick="showPopupAndRedirect()" style="position: absolute; top: 810px; left: 864px;">
+  <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+</button>
+
     
     </script>
 {% endblock %}
@@ -174,30 +241,50 @@ function showAlert() {
   <button onclick="hideImage11()" style="position: absolute; top: 590px; left: 465px;" >Cacher l'image</button>
   <button onclick="showImage11()"style="position: absolute; top: 610px; left: 464px;" >Afficher l'image</button>
 
-  <button onclick="showAlert()" style="position: absolute; top: 810px; left: 864px;">
-    <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
-  </button>
+ 
 
+<script> 
+verification()
+  function verification(){
+    count = localStorage.getItem("count")
+    if(count >= 1 ){
+    showQuestion()
+    }
+  }
+  function showQuestion() {
+    var reponse = localStorage.getItem("reponse")
+    alert("La réponse a votre question est : \n " + reponse)
+    localStorage.setItem("reponse", 0)
+    const imagesStringFromLocalStorage = localStorage.getItem("images");
+    const imagesFromLocalStorage = JSON.parse(imagesStringFromLocalStorage);
+  }
+  async function showPopupAndRedirect() {
+      var question = prompt("Quelle est la question que vous posez à l'autre joueur ?");
+      if (question !== null && question !== '') {
+          count = localStorage.getItem("count")
+          if(count == null){
+            console.log("test")
+            localStorage.setItem("count", 1)
+            count = 1
+          }
+          else{
+            localStorage.setItem("count", parseFloat(count) + 1)
+            count = parseFloat(count) + 1
+          }
+          message = "Bonjour, vous avez cliqué sur le bouton " + count + " fois !";
+          alert(message);
+          console.log(question)
+          localStorage.setItem("question",question)
+          window.location.href='/QUINSI4';
+      } else {
+          // Si l'utilisateur n'a pas saisi de question, ne rien faire
+          console.log("Aucune question saisie");
+      }
+  }
+</script>
 
-  <button onclick="window.location.href='/'"style="position: absolute; top: 15px; left: 900px;">Réinitialiser</button>
-
+<button onclick="showPopupAndRedirect()" style="position: absolute; top: 810px; left: 864px;">
+  <img src="/static/images/button_Next_tour.png" alt="Finir le tour" style="position: absolute; top: -200px; left: 420px;"  width="250" height="125">
+</button>
   
-  
-  <form style="position: absolute; top: 810px; left: 864px;">
-    <p>Vous pouvez poser une question ci-dessous :</p>
-    <label for="question">Sélectionnez une question :</label>
-    <select name="question" id="question">
-      <option value="question1">Quelle est la signification de la vie ?</option>
-      <option value="question2">Comment fonctionne la cryptomonnaie ?</option>
-      <option value="question3">Qu'est-ce que l'intelligence artificielle ?</option>
-      <option value="question4">Comment apprendre une nouvelle langue ?</option>
-      <option value="question5">Qu'est-ce que le changement climatique ?</option>
-    </select>
-    <br><br>
-    <label for="message">Votre message :</label>
-    <br>
-    <textarea name="message" id="message" rows="5" cols="50"></textarea>
-    <br><br>
-    <input type="submit" value="Envoyer">
-
 {% endblock %}
