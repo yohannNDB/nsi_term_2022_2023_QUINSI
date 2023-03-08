@@ -30,7 +30,7 @@ function setpage(){
             console.log("tesgthfght")
             var Attente = document.getElementById("Attente");
             Attente.style.display = "block";
-            Attente.innerHTML = "Veuiller patienter que votre adversaire pose une question"
+            Attente.innerHTML = "Veuillez patienter que votre adversaire pose une question"
             verification_question()
 
         }
@@ -61,7 +61,7 @@ function question(){
         setTimeout(alert(data.message),1000)
         var Attente = document.getElementById("Attente");
         Attente.style.display = "block";
-        Attente.innerHTML = "Veuiller patienter que votre adversaire pose une question"
+        Attente.innerHTML = "Veuillez patienter que votre adversaire pose une question"
         var question = document.getElementById("question");
         question.style.display = "none";
         count = count + 1
@@ -92,7 +92,7 @@ async function verification_reponse() {
         .then(async (data) => {
           if (data.message == "Nouvelle reponse") {
             nouvelle_reponse = true;
-            await alert("Vous avez recu une réponse : \n"+ data.reponse)
+            await alert("Vous avez reçu une réponse : \n"+ data.reponse)
             // Lancer une autre fonction une fois qu'une nouvelle réponse est détectée
             await verification_question();
           }
