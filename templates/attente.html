@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" />
     <title>Qui est-ce ?</title>
+    <style>
+    body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+/* Animation pour la page d'attente */
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+h1::after {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: pulse 1s ease-in-out infinite; </style>
 </head>
 <body>
     <h1>Veuillez attendre que l'autre joueur fasse sont choix</h1>
