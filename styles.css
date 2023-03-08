@@ -1,5 +1,8 @@
-body{
-    background-color: brown;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 .header{
@@ -7,8 +10,42 @@ body{
     align-items: center;
 }
 
-button:hover {
-    color: #BEB9B7;
-    border: #0062FF solid 1px;
-    background: #d1d1d1;
-    }
+
+/* Style pour le conteneur principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Style pour le texte de la page */
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour le bouton "Nouvelle partie" */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style pour le bouton lorsque l'utilisateur passe la souris dessus */
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style pour le bouton lorsque l'utilisateur clique dessus */
+.button:active {
+  background-color: #1e6823;
