@@ -55,3 +55,25 @@ body {
 #succes {
   display: none;
 }
+.contributors {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.contributors h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contributors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contributors li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
