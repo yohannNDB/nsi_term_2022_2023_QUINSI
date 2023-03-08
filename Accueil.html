@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Qui est-ce ? 
+  </title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <h1>Pour créer une partie, appuyez sur le bouton ci-dessous</h1>
+        <button onclick="new_game()" id="new_game">Nouvelle partie</button>
+        <div id="lien" style="display:none;color:rgb(0, 128, 255)"></div>
+        <button onclick="start()" id="start_game" style="display:none;">Commencer la partie</button>
+        <div id="erreur" style="display:none;color:rgb(255, 0, 0)"></div>
+        <div id="succes" style="display:none;color:rgb(85, 255, 0)"></div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
