@@ -2,25 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-
-.header{
-    text-align: center;
-    align-items: center;
+  background-color: #817777;
 }
 
 
 /* Style pour le conteneur principal */
-.container {
+.header {
   width: 80%;
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
+  align-items: center;
 }
 
 /* Style pour le texte de la page */
-.text {
+.h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
@@ -49,3 +45,5 @@ body {
 /* Style pour le bouton lorsque l'utilisateur clique dessus */
 .button:active {
   background-color: #1e6823;
+
+}
