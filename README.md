@@ -11,8 +11,8 @@ Nous nous sommes concerté sur les différentes tâches à accomplir lors de cet
 
 ### __*<font color="299CC1"> Fonctionnalités </font>*__
 
-*Pouvoir jouer sur le même ordinateur
-*Pouvoir jouer en réseau !
+* Pouvoir jouer sur le même ordinateur
+* Pouvoir jouer en réseau !
 
 ### __*<font color="299CC1"> Technologies utilisées </font>*__
 
